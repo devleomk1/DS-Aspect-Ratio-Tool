@@ -8,14 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
-
+    @State var isShowing = false
     var body: some View {
         
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("Death Stranding Diplay Ratio")
+            
+            Button(action: {
+                isShowing.toggle()
+                openFile()
+            }, label: {
+                Text("16:10")
+            })
+            
         }
         .padding()
         .onAppear{
@@ -35,6 +43,28 @@ struct ContentView: View {
             print(e.localizedDescription)
         }
 
+    }
+    
+    func openFile() {
+        let openPanel = NSOpenPanel()
+        let libraryPath: URL = FileManager.default.urls(for: .libraryDirectory, in: .allDomainsMask)[0]
+        let dsConfigFilePath: URL = libraryPath.appendingPathComponent("Containers/com.505games.deathstranding/Data/")
+        
+        openPanel.begin { response in
+            if response.rawValue == NSApplication.ModalResponse.OK.rawValue {
+                if let fileURL = openPanel.url {
+                    do {
+                        var fileText = try String(contentsOf: fileURL)
+                        
+                        fileText.append("\nHello World")
+                        try fileText.write(to: fileURL, atomically: true, encoding: .utf8)
+                    } catch {
+                        print("Error reading file: \(error.localizedDescription)")
+                    }
+                }
+            }
+            
+        }
     }
 }
 

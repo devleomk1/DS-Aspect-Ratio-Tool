@@ -36,6 +36,7 @@
 
 /* Begin PBXFileReference section */
 		0E2F75802B6E4FC500549E43 /* test.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = test.txt; path = ../../../Desktop/test.txt; sourceTree = "<group>"; };
+		0E2F75822B6E662500549E43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		0EB279C32B6E37530036C67C /* death-stranding-resoultion-setting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "death-stranding-resoultion-setting.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EB279C62B6E37530036C67C /* death_stranding_resoultion_settingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = death_stranding_resoultion_settingApp.swift; sourceTree = "<group>"; };
 		0EB279C82B6E37530036C67C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -98,6 +99,7 @@
 		0EB279C52B6E37530036C67C /* death-stranding-resoultion-setting */ = {
 			isa = PBXGroup;
 			children = (
+				0E2F75822B6E662500549E43 /* Info.plist */,
 				0EB279C62B6E37530036C67C /* death_stranding_resoultion_settingApp.swift */,
 				0EB279C82B6E37530036C67C /* ContentView.swift */,
 				0EB279CA2B6E37540036C67C /* Assets.xcassets */,
@@ -433,6 +435,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "death-stranding-resoultion-setting/Info.plist";
 				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -461,6 +464,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "death-stranding-resoultion-setting/Info.plist";
 				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
