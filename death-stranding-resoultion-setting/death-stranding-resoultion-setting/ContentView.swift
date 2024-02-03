@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+
     var body: some View {
+        
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
@@ -16,8 +18,27 @@ struct ContentView: View {
             Text("Hello, world!")
         }
         .padding()
+        .onAppear{
+            changeText()
+        }
+    }
+    func changeText() {
+        let fileManager: FileManager = FileManager.default
+        let downloadPath: URL = fileManager.urls(for: .downloadsDirectory, in: .allDomainsMask)[0]
+        let textfilePath: URL = downloadPath.appendingPathComponent("test-ds")
+        
+        do {
+            let dataFromPath: Data = try Data(contentsOf: textfilePath)
+            let text: String = String(data: dataFromPath, encoding: .utf8) ?? "EMPTY FILE!"
+            print(text)
+        } catch let e {
+            print(e.localizedDescription)
+        }
+
     }
 }
+
+
 
 #Preview {
     ContentView()
