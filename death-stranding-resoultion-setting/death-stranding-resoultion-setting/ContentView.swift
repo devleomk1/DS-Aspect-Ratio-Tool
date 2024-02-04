@@ -26,6 +26,7 @@ struct ContentView: View {
         VStack(alignment: .leading) {
             
             HStack(){
+                
                 Text("Config file data")
                     .font(.headline)
                     .multilineTextAlignment(.leading)
@@ -38,25 +39,35 @@ struct ContentView: View {
                 })
             }
             Spacer()
-            Text("Display Resoultion")
+            Text("Display Resolution")
                 .font(.headline)
             HStack(){
                 TextField("width", text: $edited_width)
                 Text("x")
                 TextField("height", text: $edited_height)
-            }.disabled(false)
+            }.disabled(!isFileOpen)
             
-            Button(action: {
-                saveFile()
-            }, label: {
-                Text("Save")
-            })
-            .disabled(false)
+            HStack(){
+                Button(action: {
+                    saveFile()
+                }, label: {
+                    Text("Save")
+                })
+                .disabled(!isFileOpen)
+                if (!isFileOpen) {
+                    Text("Need to open the Setting.cfg file")
+                        .font(.caption)
+                        .foregroundColor(Color.gray)
+                }
+            }
+            
             
             
         }
         .padding()
+        .frame(minWidth: 300, minHeight: 300)
     }
+    
     func combinePrefixAndSuffix(pre: String, suf: String) -> String {
         return pre + "\"" + suf + "\""
     }
@@ -123,9 +134,8 @@ struct ContentView: View {
                             
                         }
                         
+                        isFileOpen = true
                         
-//                        fileText.append("\nHello World")
-//                        try fileText.write(to: fileURL, atomically: true, encoding: .utf8)
                     } catch {
                         print("Error reading file: \(error.localizedDescription)")
                     }
