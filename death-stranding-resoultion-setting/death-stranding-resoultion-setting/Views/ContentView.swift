@@ -21,12 +21,16 @@ struct ContentView: View {
     @State var origin_height: String = ""
     @State var origin_width: String = ""
     
+    @State var selected_num: Int = 1
+    
+    let rendering_width: String = "rendering_width"
+    let rendering_height: String = "rendering_height"
+    
     var body: some View {
         
         VStack(alignment: .leading) {
             
             HStack(){
-                
                 Text("Config file data")
                     .font(.headline)
                     .multilineTextAlignment(.leading)
@@ -39,6 +43,24 @@ struct ContentView: View {
                 })
             }
             Spacer()
+            Divider()
+            
+                
+            Text("Select Mac Screen")
+                .font(.headline)
+            Picker(selection: $selected_num, label: Text("Select My Mac")) {
+                Text("MacBook Air 13-inch with M1").tag(1)
+                Text("MacBook Air 13-inch with M2").tag(2)
+                Text("MacBook Air 15-inch").tag(3)
+                Divider()
+                Text("MacBook Pro 14-inch").tag(4)
+                Text("MacBook Pro 16-inch").tag(5)
+                Divider()
+                Text("Custom").tag(6)
+            }
+            .disabled(!isFileOpen)
+            
+            
             Text("Display Resolution")
                 .font(.headline)
             HStack(){
@@ -62,22 +84,27 @@ struct ContentView: View {
             }
         }
         .padding()
-        .frame(minWidth: 300, minHeight: 300)
-    }
-    
-    func combinePrefixAndSuffix(pre: String, suf: String) -> String {
-        return pre + "\"" + suf + "\""
+        .frame(minWidth: 400, minHeight: 300)
     }
     
     func saveFile() {
         if let fileURL = openFilePath {
             do {
-                let prefix_width: String = "\"rendering_width\" "
-                let prefix_height: String = "\"rendering_height\" "
-                let origin_width_line: String = combinePrefixAndSuffix(pre: prefix_width, suf: origin_width)
-                let origin_height_line: String = combinePrefixAndSuffix(pre: prefix_height, suf: origin_height)
-                let edited_width_line: String = combinePrefixAndSuffix(pre: prefix_width, suf: edited_width)
-                let edited_height_line: String = combinePrefixAndSuffix(pre: prefix_height, suf: edited_height)
+                var origin_width_line: String = ""
+                var origin_height_line: String = ""
+                
+                let edited_width_line: String = combinePrefixAndSuffix(pre: rendering_width, suf: edited_width)
+                let edited_height_line: String = combinePrefixAndSuffix(pre: rendering_height, suf: edited_height)
+
+                let getLines = fileText.components(separatedBy: .newlines)
+                for line in getLines {
+                    if (line.contains(rendering_width)){
+                        origin_width_line = line
+                    }
+                    else if (line.contains(rendering_height)){
+                        origin_height_line = line
+                    }
+                }
                 
                 fileText = fileText.replacingOccurrences(of: origin_width_line, with: edited_width_line)
                 fileText = fileText.replacingOccurrences(of: origin_height_line, with: edited_height_line)
@@ -88,8 +115,6 @@ struct ContentView: View {
             }
         }
         print("change!")
-        
-        
     }
     
     func openFile() {
@@ -128,9 +153,7 @@ struct ContentView: View {
                                     edited_height = origin_height
                                 }
                             }
-                            
                         }
-                        
                         isFileOpen = true
                         
                     } catch {

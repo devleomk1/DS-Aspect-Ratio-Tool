@@ -15,6 +15,8 @@
 		0EB279D92B6E37540036C67C /* death_stranding_resoultion_settingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB279D82B6E37540036C67C /* death_stranding_resoultion_settingTests.swift */; };
 		0EB279E32B6E37540036C67C /* death_stranding_resoultion_settingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB279E22B6E37540036C67C /* death_stranding_resoultion_settingUITests.swift */; };
 		0EB279E52B6E37540036C67C /* death_stranding_resoultion_settingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB279E42B6E37540036C67C /* death_stranding_resoultion_settingUITestsLaunchTests.swift */; };
+		0EDA10AC2B6FCC33006E6935 /* MacScreenInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDA10AB2B6FCC33006E6935 /* MacScreenInfo.swift */; };
+		0EDA10AE2B6FCD05006E6935 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDA10AD2B6FCD05006E6935 /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		0EB279DE2B6E37540036C67C /* death-stranding-resoultion-settingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "death-stranding-resoultion-settingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EB279E22B6E37540036C67C /* death_stranding_resoultion_settingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = death_stranding_resoultion_settingUITests.swift; sourceTree = "<group>"; };
 		0EB279E42B6E37540036C67C /* death_stranding_resoultion_settingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = death_stranding_resoultion_settingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0EDA10AB2B6FCC33006E6935 /* MacScreenInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacScreenInfo.swift; sourceTree = "<group>"; };
+		0EDA10AD2B6FCD05006E6935 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +103,10 @@
 		0EB279C52B6E37530036C67C /* death-stranding-resoultion-setting */ = {
 			isa = PBXGroup;
 			children = (
+				0EDA10AA2B6FCBBF006E6935 /* Model */,
+				0EDA10A92B6FCBB2006E6935 /* Views */,
 				0E2F75822B6E662500549E43 /* Info.plist */,
 				0EB279C62B6E37530036C67C /* death_stranding_resoultion_settingApp.swift */,
-				0EB279C82B6E37530036C67C /* ContentView.swift */,
 				0EB279CA2B6E37540036C67C /* Assets.xcassets */,
 				0EB279CF2B6E37540036C67C /* death_stranding_resoultion_setting.entitlements */,
 				0EB279CC2B6E37540036C67C /* Preview Content */,
@@ -132,6 +137,23 @@
 				0EB279E42B6E37540036C67C /* death_stranding_resoultion_settingUITestsLaunchTests.swift */,
 			);
 			path = "death-stranding-resoultion-settingUITests";
+			sourceTree = "<group>";
+		};
+		0EDA10A92B6FCBB2006E6935 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0EB279C82B6E37530036C67C /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0EDA10AA2B6FCBBF006E6935 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0EDA10AB2B6FCC33006E6935 /* MacScreenInfo.swift */,
+				0EDA10AD2B6FCD05006E6935 /* Utils.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,8 +287,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EDA10AC2B6FCC33006E6935 /* MacScreenInfo.swift in Sources */,
 				0EB279C92B6E37530036C67C /* ContentView.swift in Sources */,
 				0EB279C72B6E37530036C67C /* death_stranding_resoultion_settingApp.swift in Sources */,
+				0EDA10AE2B6FCD05006E6935 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
