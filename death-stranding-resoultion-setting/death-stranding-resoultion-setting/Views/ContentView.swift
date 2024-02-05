@@ -12,7 +12,7 @@ import UniformTypeIdentifiers
 struct ContentView: View {
     @State var isShowing: Bool = false
     @State var isFileOpen: Bool = false
-    @State var configValue: [String: String] = [:]
+    
     @State var openFilePath: URL?
     @State var fileText: String = ""
     
@@ -60,9 +60,6 @@ struct ContentView: View {
                         .foregroundColor(Color.gray)
                 }
             }
-            
-            
-            
         }
         .padding()
         .frame(minWidth: 300, minHeight: 300)
