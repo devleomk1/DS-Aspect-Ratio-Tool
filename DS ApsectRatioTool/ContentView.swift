@@ -12,12 +12,21 @@ struct ContentView: View {
     @State var isFileOpen: Bool = false
     @State var openFilePath: URL?
     @State var fileText: String = ""
-    @State var edited_height: String = ""
-    @State var edited_width: String = ""
+    @State var edited_height: Int = 0
+    @State var edited_width: Int = 0
     @State var selected_num: Int = 0
+    
+    @State var num: Int = 0
     
     let rendering_width: String = "rendering_width"
     let rendering_height: String = "rendering_height"
+    
+    let formatter: NumberFormatter = {
+            let formatter = NumberFormatter()
+            formatter.numberStyle = .none
+            formatter.zeroSymbol = ""
+            return formatter
+        }()
     
     var body: some View {
         
@@ -85,9 +94,13 @@ struct ContentView: View {
                 .padding(/*@START_MENU_TOKEN@*/.all, 5.0/*@END_MENU_TOKEN@*/)
                 
                 HStack(){
-                    TextField("width", text: $edited_width)
+                    TextField("width", value: $edited_width, formatter: formatter)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .disableAutocorrection(true)
                     Text("x")
-                    TextField("height", text: $edited_height)
+                    TextField("height", value: $edited_height, formatter: formatter)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .disableAutocorrection(true)
                 }
                 .disabled(!isFileOpen || selected_num != 0)
                 .padding(/*@START_MENU_TOKEN@*/.all, 5.0/*@END_MENU_TOKEN@*/)
@@ -116,23 +129,23 @@ struct ContentView: View {
     func selectResolution(num:Int) {
         switch num {
         case 1:
-            edited_width = "3456"
-            edited_height = "2160"
+            edited_width = 3456
+            edited_height = 2160
         case 2:
-            edited_width = "3024"
-            edited_height = "1890"
+            edited_width = 3024
+            edited_height = 1890
         case 3:
-            edited_width = "2880"
-            edited_height = "1800"
+            edited_width = 2880
+            edited_height = 1800
         case 4:
-            edited_width = "2560"
-            edited_height = "1600"
+            edited_width = 2560
+            edited_height = 1600
         case 5:
-            edited_width = "1680"
-            edited_height = "1050"
+            edited_width = 1680
+            edited_height = 1050
         case 6:
-            edited_width = "1280"
-            edited_height = "800"
+            edited_width = 1280
+            edited_height = 800
         default:
             print("no resolution in list")
         }
@@ -145,8 +158,8 @@ struct ContentView: View {
                 var origin_width_line: String = ""
                 var origin_height_line: String = ""
                 
-                let edited_width_line: String = combinePreSuf(pre: rendering_width, suf: edited_width)
-                let edited_height_line: String = combinePreSuf(pre: rendering_height, suf: edited_height)
+                let edited_width_line: String = combinePreSuf(pre: rendering_width, suf: String(edited_width))
+                let edited_height_line: String = combinePreSuf(pre: rendering_height, suf: String(edited_height))
 
                 let getLines = fileText.components(separatedBy: .newlines)
                 for line in getLines {
@@ -192,11 +205,11 @@ struct ContentView: View {
                         for line in getLines {
                             if (line.contains(rendering_width))
                             {
-                                edited_width = getValueFromLine(line: line)
+                                edited_width = Int(getValueFromLine(line: line)) ?? 0
                             }
                             else if (line.contains(rendering_height))
                             {
-                                edited_height = getValueFromLine(line: line)
+                                edited_height = Int(getValueFromLine(line: line)) ?? 0
                             }
                         }
                         isFileOpen = true
