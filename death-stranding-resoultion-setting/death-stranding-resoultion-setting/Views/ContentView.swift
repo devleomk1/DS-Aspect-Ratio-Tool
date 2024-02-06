@@ -125,14 +125,14 @@ struct ContentView: View {
                 
             }.padding(.all)
             
-            Button("Help") {
-                isHelpWindowOpen.toggle()
-                
-            }
-            .padding([.leading, .bottom])
-            .popover(isPresented: $isHelpWindowOpen, content: {
-                HelpView()
-            })
+//            Button("Help") {
+//                isHelpWindowOpen.toggle()
+//                
+//            }
+//            .padding([.leading, .bottom])
+//            .popover(isPresented: $isHelpWindowOpen, content: {
+//                HelpView()
+//            })
             
             
         }
