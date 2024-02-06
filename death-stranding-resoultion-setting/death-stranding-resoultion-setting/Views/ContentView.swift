@@ -33,7 +33,7 @@ struct ContentView: View {
         VStack(alignment: .leading) {
             HStack(alignment: .bottom){
                 VStack(alignment: .leading){
-                    Text("16:10 Display Setting Tool")
+                    Text("16:10 Aspect Ratio Tool")
                         .font(.title)
                         .multilineTextAlignment(.leading)
                         .padding(.trailing)

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E2F75812B6E4FC500549E43 /* test.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0E2F75802B6E4FC500549E43 /* test.txt */; };
 		0EB279C72B6E37530036C67C /* death_stranding_resoultion_settingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB279C62B6E37530036C67C /* death_stranding_resoultion_settingApp.swift */; };
 		0EB279C92B6E37530036C67C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB279C82B6E37530036C67C /* ContentView.swift */; };
 		0EB279CB2B6E37540036C67C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EB279CA2B6E37540036C67C /* Assets.xcassets */; };
@@ -38,17 +37,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0E2F75802B6E4FC500549E43 /* test.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = test.txt; path = ../../../Desktop/test.txt; sourceTree = "<group>"; };
-		0E2F75822B6E662500549E43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		0EB279C32B6E37530036C67C /* death-stranding-resoultion-setting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "death-stranding-resoultion-setting.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E2F75822B6E662500549E43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0EB279C32B6E37530036C67C /* DS Aspect Ratio Tool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DS Aspect Ratio Tool.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EB279C62B6E37530036C67C /* death_stranding_resoultion_settingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = death_stranding_resoultion_settingApp.swift; sourceTree = "<group>"; };
 		0EB279C82B6E37530036C67C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0EB279CA2B6E37540036C67C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0EB279CD2B6E37540036C67C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0EB279CF2B6E37540036C67C /* death_stranding_resoultion_setting.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = death_stranding_resoultion_setting.entitlements; sourceTree = "<group>"; };
-		0EB279D42B6E37540036C67C /* death-stranding-resoultion-settingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "death-stranding-resoultion-settingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EB279D42B6E37540036C67C /* DS Aspect Ratio ToolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DS Aspect Ratio ToolTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EB279D82B6E37540036C67C /* death_stranding_resoultion_settingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = death_stranding_resoultion_settingTests.swift; sourceTree = "<group>"; };
-		0EB279DE2B6E37540036C67C /* death-stranding-resoultion-settingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "death-stranding-resoultion-settingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EB279DE2B6E37540036C67C /* DS Aspect Ratio ToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DS Aspect Ratio ToolUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EB279E22B6E37540036C67C /* death_stranding_resoultion_settingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = death_stranding_resoultion_settingUITests.swift; sourceTree = "<group>"; };
 		0EB279E42B6E37540036C67C /* death_stranding_resoultion_settingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = death_stranding_resoultion_settingUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0EDA10AB2B6FCC33006E6935 /* MacScreenInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacScreenInfo.swift; sourceTree = "<group>"; };
@@ -84,7 +82,6 @@
 		0EB279BA2B6E37520036C67C = {
 			isa = PBXGroup;
 			children = (
-				0E2F75802B6E4FC500549E43 /* test.txt */,
 				0EB279C52B6E37530036C67C /* death-stranding-resoultion-setting */,
 				0EB279D72B6E37540036C67C /* death-stranding-resoultion-settingTests */,
 				0EB279E12B6E37540036C67C /* death-stranding-resoultion-settingUITests */,
@@ -95,9 +92,9 @@
 		0EB279C42B6E37530036C67C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0EB279C32B6E37530036C67C /* death-stranding-resoultion-setting.app */,
-				0EB279D42B6E37540036C67C /* death-stranding-resoultion-settingTests.xctest */,
-				0EB279DE2B6E37540036C67C /* death-stranding-resoultion-settingUITests.xctest */,
+				0EB279C32B6E37530036C67C /* DS Aspect Ratio Tool.app */,
+				0EB279D42B6E37540036C67C /* DS Aspect Ratio ToolTests.xctest */,
+				0EB279DE2B6E37540036C67C /* DS Aspect Ratio ToolUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,13 +102,13 @@
 		0EB279C52B6E37530036C67C /* death-stranding-resoultion-setting */ = {
 			isa = PBXGroup;
 			children = (
+				0EB279CC2B6E37540036C67C /* Preview Content */,
 				0EDA10AA2B6FCBBF006E6935 /* Model */,
 				0EDA10A92B6FCBB2006E6935 /* Views */,
 				0E2F75822B6E662500549E43 /* Info.plist */,
 				0EB279C62B6E37530036C67C /* death_stranding_resoultion_settingApp.swift */,
 				0EB279CA2B6E37540036C67C /* Assets.xcassets */,
 				0EB279CF2B6E37540036C67C /* death_stranding_resoultion_setting.entitlements */,
-				0EB279CC2B6E37540036C67C /* Preview Content */,
 			);
 			path = "death-stranding-resoultion-setting";
 			sourceTree = "<group>";
@@ -162,9 +159,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0EB279C22B6E37530036C67C /* death-stranding-resoultion-setting */ = {
+		0EB279C22B6E37530036C67C /* DS Aspect Ratio Tool */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0EB279E82B6E37540036C67C /* Build configuration list for PBXNativeTarget "death-stranding-resoultion-setting" */;
+			buildConfigurationList = 0EB279E82B6E37540036C67C /* Build configuration list for PBXNativeTarget "DS Aspect Ratio Tool" */;
 			buildPhases = (
 				0EB279BF2B6E37530036C67C /* Sources */,
 				0EB279C02B6E37530036C67C /* Frameworks */,
@@ -174,14 +171,14 @@
 			);
 			dependencies = (
 			);
-			name = "death-stranding-resoultion-setting";
+			name = "DS Aspect Ratio Tool";
 			productName = "death-stranding-resoultion-setting";
-			productReference = 0EB279C32B6E37530036C67C /* death-stranding-resoultion-setting.app */;
+			productReference = 0EB279C32B6E37530036C67C /* DS Aspect Ratio Tool.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0EB279D32B6E37540036C67C /* death-stranding-resoultion-settingTests */ = {
+		0EB279D32B6E37540036C67C /* DS Aspect Ratio ToolTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0EB279EB2B6E37540036C67C /* Build configuration list for PBXNativeTarget "death-stranding-resoultion-settingTests" */;
+			buildConfigurationList = 0EB279EB2B6E37540036C67C /* Build configuration list for PBXNativeTarget "DS Aspect Ratio ToolTests" */;
 			buildPhases = (
 				0EB279D02B6E37540036C67C /* Sources */,
 				0EB279D12B6E37540036C67C /* Frameworks */,
@@ -192,14 +189,14 @@
 			dependencies = (
 				0EB279D62B6E37540036C67C /* PBXTargetDependency */,
 			);
-			name = "death-stranding-resoultion-settingTests";
+			name = "DS Aspect Ratio ToolTests";
 			productName = "death-stranding-resoultion-settingTests";
-			productReference = 0EB279D42B6E37540036C67C /* death-stranding-resoultion-settingTests.xctest */;
+			productReference = 0EB279D42B6E37540036C67C /* DS Aspect Ratio ToolTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		0EB279DD2B6E37540036C67C /* death-stranding-resoultion-settingUITests */ = {
+		0EB279DD2B6E37540036C67C /* DS Aspect Ratio ToolUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0EB279EE2B6E37540036C67C /* Build configuration list for PBXNativeTarget "death-stranding-resoultion-settingUITests" */;
+			buildConfigurationList = 0EB279EE2B6E37540036C67C /* Build configuration list for PBXNativeTarget "DS Aspect Ratio ToolUITests" */;
 			buildPhases = (
 				0EB279DA2B6E37540036C67C /* Sources */,
 				0EB279DB2B6E37540036C67C /* Frameworks */,
@@ -210,9 +207,9 @@
 			dependencies = (
 				0EB279E02B6E37540036C67C /* PBXTargetDependency */,
 			);
-			name = "death-stranding-resoultion-settingUITests";
+			name = "DS Aspect Ratio ToolUITests";
 			productName = "death-stranding-resoultion-settingUITests";
-			productReference = 0EB279DE2B6E37540036C67C /* death-stranding-resoultion-settingUITests.xctest */;
+			productReference = 0EB279DE2B6E37540036C67C /* DS Aspect Ratio ToolUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -238,7 +235,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0EB279BE2B6E37520036C67C /* Build configuration list for PBXProject "death-stranding-resoultion-setting" */;
+			buildConfigurationList = 0EB279BE2B6E37520036C67C /* Build configuration list for PBXProject "DS Aspect Ratio Tool" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -251,9 +248,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0EB279C22B6E37530036C67C /* death-stranding-resoultion-setting */,
-				0EB279D32B6E37540036C67C /* death-stranding-resoultion-settingTests */,
-				0EB279DD2B6E37540036C67C /* death-stranding-resoultion-settingUITests */,
+				0EB279C22B6E37530036C67C /* DS Aspect Ratio Tool */,
+				0EB279D32B6E37540036C67C /* DS Aspect Ratio ToolTests */,
+				0EB279DD2B6E37540036C67C /* DS Aspect Ratio ToolUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -264,7 +261,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EB279CE2B6E37540036C67C /* Preview Assets.xcassets in Resources */,
-				0E2F75812B6E4FC500549E43 /* test.txt in Resources */,
 				0EB279CB2B6E37540036C67C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -320,12 +316,12 @@
 /* Begin PBXTargetDependency section */
 		0EB279D62B6E37540036C67C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0EB279C22B6E37530036C67C /* death-stranding-resoultion-setting */;
+			target = 0EB279C22B6E37530036C67C /* DS Aspect Ratio Tool */;
 			targetProxy = 0EB279D52B6E37540036C67C /* PBXContainerItemProxy */;
 		};
 		0EB279E02B6E37540036C67C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0EB279C22B6E37530036C67C /* death-stranding-resoultion-setting */;
+			target = 0EB279C22B6E37530036C67C /* DS Aspect Ratio Tool */;
 			targetProxy = 0EB279DF2B6E37540036C67C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -522,7 +518,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/death-stranding-resoultion-setting.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/death-stranding-resoultion-setting";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DS Aspect Ratio Tool.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DS Aspect Ratio Tool";
 			};
 			name = Debug;
 		};
@@ -541,7 +537,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/death-stranding-resoultion-setting.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/death-stranding-resoultion-setting";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DS Aspect Ratio Tool.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DS Aspect Ratio Tool";
 			};
 			name = Release;
 		};
@@ -582,7 +578,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0EB279BE2B6E37520036C67C /* Build configuration list for PBXProject "death-stranding-resoultion-setting" */ = {
+		0EB279BE2B6E37520036C67C /* Build configuration list for PBXProject "DS Aspect Ratio Tool" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0EB279E62B6E37540036C67C /* Debug */,
@@ -591,7 +587,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0EB279E82B6E37540036C67C /* Build configuration list for PBXNativeTarget "death-stranding-resoultion-setting" */ = {
+		0EB279E82B6E37540036C67C /* Build configuration list for PBXNativeTarget "DS Aspect Ratio Tool" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0EB279E92B6E37540036C67C /* Debug */,
@@ -600,7 +596,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0EB279EB2B6E37540036C67C /* Build configuration list for PBXNativeTarget "death-stranding-resoultion-settingTests" */ = {
+		0EB279EB2B6E37540036C67C /* Build configuration list for PBXNativeTarget "DS Aspect Ratio ToolTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0EB279EC2B6E37540036C67C /* Debug */,
@@ -609,7 +605,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0EB279EE2B6E37540036C67C /* Build configuration list for PBXNativeTarget "death-stranding-resoultion-settingUITests" */ = {
+		0EB279EE2B6E37540036C67C /* Build configuration list for PBXNativeTarget "DS Aspect Ratio ToolUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0EB279EF2B6E37540036C67C /* Debug */,
