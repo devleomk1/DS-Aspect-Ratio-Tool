@@ -10,6 +10,7 @@ import UniformTypeIdentifiers
 
 struct ContentView: View {
     @State var isFileOpen: Bool = false
+    @State var isFileSaved: Bool = false
     @State var openFilePath: URL?
     @State var fileText: String = ""
     @State var edited_height: Int = 0
@@ -85,10 +86,10 @@ struct ContentView: View {
                     Text("2560 x 1600 (MacBook Air 13-inch)").tag(4)
                     Text("1680 x 1050").tag(5)
                     Text("1280 x 800").tag(6)
-                    
                 }
                 .onChange(of: selected_num, {
                     selectResolution(num: selected_num)
+                    isFileSaved = false
                 })
                 .disabled(!isFileOpen)
                 .padding(/*@START_MENU_TOKEN@*/.all, 5.0/*@END_MENU_TOKEN@*/)
@@ -97,10 +98,16 @@ struct ContentView: View {
                     TextField("width", value: $edited_width, formatter: formatter)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .disableAutocorrection(true)
+                        .onChange(of: edited_width, {
+                            isFileSaved = false
+                        })
                     Text("x")
                     TextField("height", value: $edited_height, formatter: formatter)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .disableAutocorrection(true)
+                        .onChange(of: edited_width, {
+                            isFileSaved = false
+                        })
                 }
                 .disabled(!isFileOpen || selected_num != 0)
                 .padding(/*@START_MENU_TOKEN@*/.all, 5.0/*@END_MENU_TOKEN@*/)
@@ -114,6 +121,11 @@ struct ContentView: View {
                     .disabled(!isFileOpen)
                     if (!isFileOpen) {
                         Text("Need to open the Setting.cfg file")
+                            .font(.caption)
+                            .foregroundColor(Color.gray)
+                    }
+                    else if (isFileSaved) {
+                        Text("Setting is Applied")
                             .font(.caption)
                             .foregroundColor(Color.gray)
                     }
@@ -175,6 +187,7 @@ struct ContentView: View {
                 fileText = fileText.replacingOccurrences(of: origin_height_line, with: edited_height_line)
                 
                 try fileText.write(to: fileURL, atomically: true, encoding: .utf8)
+                isFileSaved = true
             } catch let e {
                 print(e.localizedDescription)
             }
