@@ -9,7 +9,6 @@ import SwiftUI
 import UniformTypeIdentifiers
 
 struct ContentView: View {
-    @State var isShowing: Bool = false
     @State var isFileOpen: Bool = false
     @State public var isHelpWindowOpen: Bool = false
     
@@ -69,7 +68,6 @@ struct ContentView: View {
                                 .foregroundColor(Color.green)
                         }
                         Button(action: {
-                            isShowing.toggle()
                             openFile()
                         }, label: {
                             Text("Open file...")
@@ -172,8 +170,8 @@ struct ContentView: View {
                 var origin_width_line: String = ""
                 var origin_height_line: String = ""
                 
-                let edited_width_line: String = combinePrefixAndSuffix(pre: rendering_width, suf: edited_width)
-                let edited_height_line: String = combinePrefixAndSuffix(pre: rendering_height, suf: edited_height)
+                let edited_width_line: String = combinePreSuf(pre: rendering_width, suf: edited_width)
+                let edited_height_line: String = combinePreSuf(pre: rendering_height, suf: edited_height)
 
                 let getLines = fileText.components(separatedBy: .newlines)
                 for line in getLines {

@@ -7,7 +7,7 @@
 		<dict>
 			<key>UTTypeConformsTo</key>
 			<array>
-				<string>public.data</string>
+				<string>Public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
 			<string>New Custom</string>
@@ -29,7 +29,7 @@
 		<dict>
 			<key>UTTypeConformsTo</key>
 			<array>
-				<string>public.data</string>
+				<string>Public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
 			<string>New Custom</string>
@@ -45,7 +45,6 @@
 				</array>
 			</dict>
 		</dict>
-		<dict/>
 	</array>
 </dict>
 </plist>

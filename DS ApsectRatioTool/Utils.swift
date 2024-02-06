@@ -7,6 +7,6 @@
 
 import Foundation
 
-func combinePrefixAndSuffix(pre: String, suf: String) -> String {
+func combinePreSuf(pre: String, suf: String) -> String {
     return "\"" + pre + "\" " + "\"" + suf + "\""
 }
