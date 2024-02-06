@@ -10,19 +10,11 @@ import UniformTypeIdentifiers
 
 struct ContentView: View {
     @State var isFileOpen: Bool = false
-    @State public var isHelpWindowOpen: Bool = false
-    
     @State var openFilePath: URL?
     @State var fileText: String = ""
-    
     @State var edited_height: String = ""
     @State var edited_width: String = ""
-    @State var origin_height: String = ""
-    @State var origin_width: String = ""
-    
     @State var selected_num: Int = 0
-    
-    @State private var availableResolutions: [String] = []
     
     let rendering_width: String = "rendering_width"
     let rendering_height: String = "rendering_height"
@@ -55,11 +47,6 @@ struct ContentView: View {
                         .font(.subheadline)
                         .foregroundColor(Color.gray)
            
-//                    TextField("", text: .constant("/Users/{USER_NAME}/Library/Containers/com.505games.deathstranding/Data/Setting.cfg"))
-//                        .font(.subheadline)
-//                        .disabled(/*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
-                    
-                    
                     Divider()
                     HStack(){
                         Spacer()
@@ -122,20 +109,8 @@ struct ContentView: View {
                 
                 
             }.padding(.all)
-            
-//            Button("Help") {
-//                isHelpWindowOpen.toggle()
-//                
-//            }
-//            .padding([.leading, .bottom])
-//            .popover(isPresented: $isHelpWindowOpen, content: {
-//                HelpView()
-//            })
-            
-            
         }
         .padding()
-        
     }
     
     func selectResolution(num:Int) {
@@ -191,13 +166,14 @@ struct ContentView: View {
                 print(e.localizedDescription)
             }
         }
-        print("change!")
     }
     
     func openFile() {
         let openPanel = NSOpenPanel()
         let libraryPath: URL = FileManager.default.urls(for: .libraryDirectory, in: .allDomainsMask)[0]
         let dsConfigFilePath: URL = libraryPath.appendingPathComponent("Containers/com.505games.deathstranding/Data/")
+        
+        print("HERE!")
         
         openPanel.directoryURL = dsConfigFilePath
         openPanel.allowsMultipleSelection = false
@@ -214,21 +190,13 @@ struct ContentView: View {
                         
                         let getLines = fileText.components(separatedBy: .newlines)
                         for line in getLines {
-                            if (line.contains("rendering_width"))
+                            if (line.contains(rendering_width))
                             {
-                                let components = line.components(separatedBy: .whitespaces)
-                                if (components.count == 2) {
-                                    origin_width = components[1].replacingOccurrences(of: "\"", with: "")
-                                    edited_width = origin_width
-                                }
+                                edited_width = getValueFromLine(line: line)
                             }
-                            if (line.contains("rendering_height"))
+                            else if (line.contains(rendering_height))
                             {
-                                let components = line.components(separatedBy: .whitespaces)
-                                if (components.count == 2) {
-                                    origin_height = components[1].replacingOccurrences(of: "\"", with: "")
-                                    edited_height = origin_height
-                                }
+                                edited_height = getValueFromLine(line: line)
                             }
                         }
                         isFileOpen = true
@@ -240,6 +208,14 @@ struct ContentView: View {
             }
             
         }
+    }
+    
+    func getValueFromLine(line: String) -> String {
+        let components = line.components(separatedBy: .whitespaces)
+        if (components.count == 2) {
+            return components[1].replacingOccurrences(of: "\"", with: "")
+        }
+        return ""
     }
 }
 
