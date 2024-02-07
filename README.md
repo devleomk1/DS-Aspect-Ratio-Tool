@@ -1,3 +1,4 @@
+![DS Aspect Ratio Tool Icon](Asset/DSAppIcon-MacOS-256x256@1x.png)
 
 ![platform](https://img.shields.io/badge/platform-macOS-blue)
 # DS Aspect Ratio Tool
