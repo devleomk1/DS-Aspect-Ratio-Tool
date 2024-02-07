@@ -2,24 +2,24 @@
 ![platform](https://img.shields.io/badge/platform-macOS-blue)
 # DS Aspect Ratio Tool
 Aspect ratio and resolution change tool for the DEATH STRANDING Director's Cut for macOS
- - 게임에서 지원하지 않는 16:10 화면비의 다양한 해상도 프리셋을 지원합니다.
- - 커스텀 설정으로 다양한 커스텀 해상도를 적용 할 수 있습니다.
+ - Supports various resolution presets for 16:10 aspect ratios not supported by the game.
+ - Can apply various custom resolutions with custom settings.
 
 ## Installation
-다운로드 페이지에서 가장 높은 버전의 pkg를 다운받아 실행하고 설치합니다.
+Download the latest version of the PKG installer from the [download page](link-to-download-page) and run it
+
 
 ## Usage
-![app_image](Asset/app_image.png)
- 1. 오픈파일 버튼을 눌러 아래 경로에 위치한 `Setting.cfg` 파일을 엽니다.
+![DS Aspect Ratio Tool](Asset/app_image.png)
+ 1. Click on the <kbd>Open file</kbd> button to locate the `Setting.cfg` file. The file is typically found at:
+    
     
     ```sh
-    /Users/{USER_NAME}/Library/Containers/com.505games.deathstranding/Data/Setting.cfg
+    /Users/YOUR_USERNAME/Library/Containers/com.505games.deathstranding/Data/Setting.cfg
     ```    
- 1. 목록에서 원하는 해상도를 선택하고 <kbd>Apply</kbd> 버튼을 누르세요.
- 1. 원하는 해상도가 없다면 목록에서 `Custom`을 선택하고 직접 해상도를 입력하세요.
+ 1. Select the desired resolution from the list and click <kbd>Apply</kbd>.
+ 1. If your preferred resolution is not available, choose `Custom` from the list and enter your custom resolution settings.
 
 >[!TIP]
-> 경로에서 `Setting.cfg` 파일을 찾을 수 없다면 게임을 한번 실행하세요.
-
-## 
+> If you cannot find the `Setting.cfg` file in the specified path, try launching the game at least once.
 
