@@ -7,7 +7,7 @@ Aspect ratio and resolution change tool for the DEATH STRANDING Director's Cut f
  - Can apply various custom resolutions with custom settings.
 
 ## Installation
-Download the latest version of the PKG installer from the [download page](link-to-download-page) and run it
+Download the latest version of the `dmg` installer from the [download page](https://github.com/devleomk1/DS-display-ratio/releases/) and run it
 
 
 ## Usage
