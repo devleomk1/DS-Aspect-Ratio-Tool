@@ -9,7 +9,7 @@ Aspect ratio and resolution change tool for the DEATH STRANDING Director's Cut f
 다운로드 페이지에서 가장 높은 버전의 pkg를 다운받아 실행하고 설치합니다.
 
 ## Usage
-
+![app_image](Asset/app_image.png)
  1. 오픈파일 버튼을 눌러 아래 경로에 위치한 `Setting.cfg` 파일을 엽니다.
     
     ```sh
