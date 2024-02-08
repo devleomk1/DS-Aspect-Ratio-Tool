@@ -30,7 +30,7 @@ Download the latest version of the `dmg` installer from the [download page](http
 >[!TIP]
 > Menu screen, loading screens and cutscenes do not change aspect ratio.
 
-## Example
+## Examples
 
 ### MacBook Pro 14-inch
 <img src="Asset/16-9-screen_resize.png" width="50%"/><img src="Asset/16-10-screen_resize.png" width="50%"/>
