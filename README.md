@@ -27,3 +27,13 @@ Download the latest version of the `dmg` installer from the [download page](http
 >[!TIP]
 > If you cannot find the `Setting.cfg` file in the specified path, try launching the game at least once.
 
+>[!TIP]
+> Menu screen, loading screens and cutscenes do not change aspect ratio.
+
+## Example
+
+### MacBook Pro 14-inch
+<img src="Asset/16-9-screen_resize.png" width="50%"/><img src="Asset/16-10-screen_resize.png" width="50%"/> 
+
+### Vertical Display
+<img src="Asset/vertical-screen.png" width="50%"/>
