@@ -1,4 +1,4 @@
-![DS Aspect Ratio Tool Icon](Asset/DSAppIcon-MacOS-256x256@1x.png)
+<img src="Asset/DSAppIcon-MacOS-512x512@1x.png" width="256" />
 
 ![platform](https://img.shields.io/badge/platform-macOS-blue)
 # DS Aspect Ratio Tool
@@ -11,9 +11,12 @@ Download the latest version of the `dmg` installer from the [download page](http
 
 
 ## Usage
-![DS Aspect Ratio Tool](Asset/app_image.png)
+<p align="center">
+ <img src="Asset/app_image.png" width="50%" /> 
+</p>
+
  1. Click on the <kbd>Open file</kbd> button to locate the `Setting.cfg` file. The file is typically found at:
-    
+
     
     ```sh
     /Users/YOUR_USERNAME/Library/Containers/com.505games.deathstranding/Data/Setting.cfg
