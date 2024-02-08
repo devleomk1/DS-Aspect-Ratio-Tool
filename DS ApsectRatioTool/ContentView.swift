@@ -34,7 +34,7 @@ struct ContentView: View {
         VStack(alignment: .leading) {
             HStack(alignment: .bottom){
                 VStack(alignment: .leading){
-                    Text("16:10 Aspect Ratio Tool")
+                    Text("DS Aspect Ratio Tool")
                         .font(.title)
                         .multilineTextAlignment(.leading)
                         .padding(.trailing)
@@ -45,9 +45,6 @@ struct ContentView: View {
                 }.padding([.top, .leading, .bottom])
                 Spacer()
             }
-            
-            
-            
             GroupBox(){
                 VStack(alignment: .leading){
                     Text("Open Setting File")
