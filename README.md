@@ -12,7 +12,7 @@ Download the latest version of the `dmg` installer from the [download page](http
 
 ## Usage
 <p align="center">
- <img src="Asset/app_image.png" width="50%" /> 
+ <img src="Asset/app_image.png" width="500" /> 
 </p>
 
  1. Click on the <kbd>Open file</kbd> button to locate the `Setting.cfg` file. The file is typically found at:
@@ -33,7 +33,14 @@ Download the latest version of the `dmg` installer from the [download page](http
 ## Example
 
 ### MacBook Pro 14-inch
-<img src="Asset/16-9-screen_resize.png" width="50%"/><img src="Asset/16-10-screen_resize.png" width="50%"/> 
+<img src="Asset/16-9-screen_resize.png" width="50%"/><img src="Asset/16-10-screen_resize.png" width="50%"/>
+
+ - The left image shows the game at the default 16:9 aspect ratio (1600x900 resolution).
+ - On the right, the aspect ratio is adjusted to 16:10 (3024x1890 native resolution of MacBook Pro 14-inch) using the DS  Ratio Aspect Tool.
 
 ### Vertical Display
 <img src="Asset/vertical-screen.png" width="50%"/>
+
+ - If you choose custom settings, you can apply various resolutions not available in the presets.
+ - The above images depict gameplay on a vertical display (1080x1920 resolution).
+
