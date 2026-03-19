@@ -12,6 +12,8 @@
 		0E72E2032B72338400499D3B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E72E2022B72338400499D3B /* ContentView.swift */; };
 		0E72E2052B7233DA00499D3B /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E72E2042B7233DA00499D3B /* Utils.swift */; };
 		0E72E2092B7234B500499D3B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E72E2082B7234B500499D3B /* Preview Assets.xcassets */; };
+		A1B2C3D42C00100100000001 /* ConfigFileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D32C00100100000001 /* ConfigFileService.swift */; };
+		A1B2C3D62C00100100000001 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D52C00100100000001 /* ContentViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		0E72E2042B7233DA00499D3B /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		0E72E2062B72341F00499D3B /* DS-ApsectRatioTool-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "DS-ApsectRatioTool-Info.plist"; sourceTree = SOURCE_ROOT; };
 		0E72E2082B7234B500499D3B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A1B2C3D32C00100100000001 /* ConfigFileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigFileService.swift; sourceTree = "<group>"; };
+		A1B2C3D52C00100100000001 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 				0E72E2062B72341F00499D3B /* DS-ApsectRatioTool-Info.plist */,
 				0E72E1EF2B72327D00499D3B /* DS_ApsectRatioToolApp.swift */,
 				0E72E2022B72338400499D3B /* ContentView.swift */,
+				A1B2C3D52C00100100000001 /* ContentViewModel.swift */,
+				A1B2C3D32C00100100000001 /* ConfigFileService.swift */,
 				0E72E2042B7233DA00499D3B /* Utils.swift */,
 				0E72E1F32B72327E00499D3B /* Assets.xcassets */,
 				0E72E1F82B72327E00499D3B /* DS_ApsectRatioTool.entitlements */,
@@ -146,6 +152,8 @@
 			files = (
 				0E72E1F02B72327D00499D3B /* DS_ApsectRatioToolApp.swift in Sources */,
 				0E72E2032B72338400499D3B /* ContentView.swift in Sources */,
+				A1B2C3D62C00100100000001 /* ContentViewModel.swift in Sources */,
+				A1B2C3D42C00100100000001 /* ConfigFileService.swift in Sources */,
 				0E72E2052B7233DA00499D3B /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
